@@ -4,7 +4,7 @@ API mockada com JSON Server para alimentar o projeto [La Farina](https://github.
 
 Publicada em: https://api-tpizza-artesanal.onrender.com
 
-O `server.js` é o mesmo servidor customizado do La Farina (`server/server.js`): JSON Server com validações que retornam `400` (nome, e-mail, senha e tamanho obrigatórios; e-mail inválido; PATCH inválido) e `404` com mensagem para pedido inexistente.
+O `server.js` é o mesmo servidor customizado do La Farina (`server/server.js`): JSON Server com validações que retornam `400` (nome, e-mail, senha e tamanho obrigatórios; pedido com lista de pizzas vazia; mais de 2 sabores na mesma pizza; e-mail inválido; PATCH inválido) e `404` com mensagem para pedido inexistente.
 
 ## Rotas principais
 
