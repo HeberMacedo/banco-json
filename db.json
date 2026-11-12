@@ -15,6 +15,14 @@
       "senha": "123456",
       "tipo": "usuario",
       "criadoEm": "2026-09-15T17:00:00-03:00"
+    },
+    {
+      "id": 3,
+      "nome": "Heber Macedo",
+      "email": "heber@teste.com",
+      "senha": "123456",
+      "tipo": "usuario",
+      "criadoEm": "2026-09-15T17:00:00-03:00"
     }
   ],
   "tamanhos": [

@@ -25,3 +25,6 @@ jobs:
 
       - name: Validar JSON
         run: node -e "JSON.parse(require('fs').readFileSync('db.json', 'utf8')); console.log('db.json valido')"
+
+      - name: Validar servidor
+        run: node --check server.js
