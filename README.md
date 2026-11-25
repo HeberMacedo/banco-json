@@ -15,6 +15,14 @@ O `server.js` é o mesmo servidor customizado do La Farina (`server/server.js`):
 - `/status_pedido`
 - `/usuarios`
 
+## Observabilidade
+
+O `observabilidade.js` é o mesmo módulo do La Farina (`server/observabilidade.js`).
+
+- `/health`: responde `200` quando a API consegue ler o banco e `503` quando não consegue
+- `/metrics`: métricas no formato do Prometheus (requisições, tempo de resposta, pedidos criados, validações recusadas e pedidos por status)
+- Toda resposta traz o header `X-Request-Id`, e cada requisição gera uma linha de log em JSON com esse id
+
 ## Contas de teste
 
 | Perfil | E-mail | Senha |
