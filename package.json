@@ -4,7 +4,8 @@
   "private": false,
   "scripts": {
     "dev": "node server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "node teste-fumaca.js"
   },
   "dependencies": {
     "json-server": "^0.17.4"

@@ -18,7 +18,7 @@ jobs:
       - name: Configurar Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Instalar dependencias
         run: npm install
@@ -28,3 +28,6 @@ jobs:
 
       - name: Validar servidor
         run: node --check server.js
+
+      - name: Teste de fumaça (sobe a API e testa health, validações, pedido e métricas)
+        run: npm test
