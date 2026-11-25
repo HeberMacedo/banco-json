@@ -1,0 +1,15 @@
+# Blueprint do Render: cria a API do La Farina numa conta do Render.
+# Para criar: https://render.com/deploy?repo=https://github.com/HeberMacedo/banco-json
+services:
+  - type: web
+    name: la-farina-api
+    runtime: node
+    plan: free
+    region: virginia
+    branch: main
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /health
+    # Só publica depois que o GitHub Actions deste repositório passar
+    # (validação do db.json + teste de fumaça da API).
+    autoDeployTrigger: checksPass
